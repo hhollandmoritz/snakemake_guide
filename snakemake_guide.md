@@ -82,7 +82,7 @@ The `cookiecutter` command will download the slurm profile folder into your `~/.
 
 Cookiecutter will then lead you through some interactive settings. 
 
-Here we will mimic settings in Toni's premise sbatch template `threaded.slurm`, and assume that the programs being run are installed in a conda environment, see below for what you'd do differently for software in the `linuxbrew/colsa` module. Type the commands or text inside the triangle brackets <> and then press enter (don't worry if you type some wrong, or make mistakes, we can always modify them later):
+Here we will mimic settings in Toni's premise sbatch template `threaded.slurm`. Type the commands or text inside the triangle brackets <> and then press enter (don't worry if you type some wrong, or make mistakes, we can always modify them later):
 ```bash
 (snakemake-minimal) [userid@login01 snakemake]$ cookiecutter https://github.com/Snakemake-Profiles/slurm.git
   [1/17] profile_name (slurm): <slurm.threaded>
@@ -193,7 +193,7 @@ Below is a (non-comprehensive) list of possible directives and their purpose (fu
 - -n is dry run
 - -p is print the commands being run
 
-## Modules
+## Using different software modules on HPC system
 
 To define a rule using software from an anaconda/colsa module:
 ```bash
